@@ -1,0 +1,16 @@
+{
+  "motion": {
+    "player": {
+      "nomal": {
+        "pass": "../assets/model/Chara/Player/PlayerNomal.mv1",
+        "speed": 30.0,
+        "loop": true
+      },
+      "walk": {
+        "pass": "../assets/model/Chara/Player/PlayerRun.mv1",
+        "speed": 30.0,
+        "loop": true
+      }
+    }
+  }
+}
