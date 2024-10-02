@@ -18,7 +18,10 @@ GameSetting::GameSetting()
     BeforeLibInit();
 
     //ƒ‰ƒCƒuƒ‰ƒŠ‰Šú‰»
-    assert(!DxLib_Init());
+    if (DxLib_Init() == -1)
+    {
+        DebugBreak();
+    }
 
     AfterLibInit();
 }
