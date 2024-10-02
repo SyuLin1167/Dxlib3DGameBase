@@ -16,7 +16,7 @@ Window::Window()
     ChangeWindowMode(true);
     SetGraphMode(static_cast<int>(WINDOW_SIZE.x), static_cast<int>(WINDOW_SIZE.y), COLOR_BIT);
     SetWindowSizeExtendRate(1.0);
-    SetMainWindowText("Pass&Over");
+    SetMainWindowText("3DGameTemp");
 }
 
 Window::~Window()

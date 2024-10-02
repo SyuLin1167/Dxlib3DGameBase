@@ -1,5 +1,4 @@
 #include<DxLib.h>
-#include<assert.h>
 
 #include"../SceneBase/SceneBase.h"
 #include"../../Object/ObjManager/ObjManager.h"
@@ -33,8 +32,8 @@ void SceneManager::GameLoop()
     {
         //シーンのフロー
         UpdateScene();
-        ChangeScene();
         DrawScene();
+        ChangeScene();
     }
     ObjManager::DeleteAllObj();
 }
@@ -61,7 +60,5 @@ void SceneManager::ChangeScene()
     {
         nowScene.pop();
         nowScene.emplace(holdScene);
-
-        assert(!nowScene.empty());
     }
 }
